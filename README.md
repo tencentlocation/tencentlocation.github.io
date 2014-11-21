@@ -1,4 +1,4 @@
-tencentlocation.github.io
-=========================
+panxw.github.com
+================
 
-TencentLocationSDK User Guide
+Personal Blog powered by Jekyll&amp;Gitpage! http://www.winfirm.cn
