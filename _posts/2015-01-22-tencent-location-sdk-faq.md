@@ -31,15 +31,24 @@ summary: "腾讯定位SDK常见使用问题"
 定位SDK从4.0版本开始还需要添加以下配置
 
 	-dontwarn  org.eclipse.jdt.annotation.**
+
+定位SDK从4.1版本开始还需要添加以下配置
+
+	-keepclassmembers class ** {
+		public void on*Event(...);
+	}
 	
 完整的配置如下：
 
 ```
+-keepclassmembers class ** {
+    public void on*Event(...);
+}
 -keepclasseswithmembernames class * {
   native <methods>;
 }
--dontwarn android.location.Location
 -dontwarn  org.eclipse.jdt.annotation.**
+-dontwarn android.location.Location
 ```
 	
 ## GPS定不了位？
